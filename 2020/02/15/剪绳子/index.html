@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="题目描述 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,5,3,8,6}，则重建二叉树并返回。  先序排列顺序为：根-左-右，中序排列为：左-根-右。例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,">
+<meta name="description" content="题目描述 给你一根长度为n的绳子，请把绳子剪成整数长的 m 段（m、n都是整数，n&amp;gt;1并且m&amp;gt;1），每段绳子的长度记为 k[0], k[1],…, k[m]。请问 k[0] x k[1] x … x k[m] 可能的最大乘积是多少？例如，当绳子的长度是 8 时，我们把它剪成长度分别为 2、3、3 的三段，此时得到的最大乘积是 18。  1234567891011121314151617">
 <meta name="keywords" content="剑指 offer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="重建二叉树">
-<meta property="og:url" content="http://yoursite.com/2020/02/09/重建二叉树/index.html">
+<meta property="og:title" content="剪绳子">
+<meta property="og:url" content="http://yoursite.com/2020/02/15/剪绳子/index.html">
 <meta property="og:site_name" content="newcaoguo">
-<meta property="og:description" content="题目描述 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,5,3,8,6}，则重建二叉树并返回。  先序排列顺序为：根-左-右，中序排列为：左-根-右。例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,">
+<meta property="og:description" content="题目描述 给你一根长度为n的绳子，请把绳子剪成整数长的 m 段（m、n都是整数，n&amp;gt;1并且m&amp;gt;1），每段绳子的长度记为 k[0], k[1],…, k[m]。请问 k[0] x k[1] x … x k[m] 可能的最大乘积是多少？例如，当绳子的长度是 8 时，我们把它剪成长度分别为 2、3、3 的三段，此时得到的最大乘积是 18。  1234567891011121314151617">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-09T15:34:10.342Z">
+<meta property="og:updated_time" content="2020-02-15T10:47:16.699Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="重建二叉树">
-<meta name="twitter:description" content="题目描述 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,5,3,8,6}，则重建二叉树并返回。  先序排列顺序为：根-左-右，中序排列为：左-根-右。例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,">
+<meta name="twitter:title" content="剪绳子">
+<meta name="twitter:description" content="题目描述 给你一根长度为n的绳子，请把绳子剪成整数长的 m 段（m、n都是整数，n&amp;gt;1并且m&amp;gt;1），每段绳子的长度记为 k[0], k[1],…, k[m]。请问 k[0] x k[1] x … x k[m] 可能的最大乘积是多少？例如，当绳子的长度是 8 时，我们把它剪成长度分别为 2、3、3 的三段，此时得到的最大乘积是 18。  1234567891011121314151617">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/02/09/重建二叉树/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/15/剪绳子/">
 
 
 
 
 
-  <title>重建二叉树 | newcaoguo</title>
+  <title>剪绳子 | newcaoguo</title>
   
 
 
@@ -250,7 +250,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/09/重建二叉树/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/15/剪绳子/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="newcaoguo">
@@ -267,7 +267,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">重建二叉树</h1>
+          <h1 class="post-title" itemprop="name headline">剪绳子</h1>
         
 
         <div class="post-meta">
@@ -279,8 +279,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-09T23:29:44+08:00">
-                2020-02-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-15T18:36:26+08:00">
+                2020-02-15
               </time>
             
 
@@ -317,11 +317,10 @@
       
 
       
-        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=13&tqId=11157&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking" target="_blank" rel="noopener">题目描述</a></h2><blockquote>
-<p>输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,5,3,8,6}，则重建二叉树并返回。</p>
+        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="https://www.nowcoder.com/practice/57d85990ba5b440ab888fc72b0751bf8?tpId=13&tqId=33257&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking" target="_blank" rel="noopener">题目描述</a></h2><blockquote>
+<p>给你一根长度为n的绳子，请把绳子剪成整数长的 m 段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为 k[0], k[1],…, k[m]。请问 k[0] x k[1] x … x k[m] 可能的最大乘积是多少？例如，当绳子的长度是 8 时，我们把它剪成长度分别为 2、3、3 的三段，此时得到的最大乘积是 18。</p>
 </blockquote>
-<p>先序排列顺序为：根-左-右，中序排列为：左-根-右。<br>例如输入前序遍历序列 {1,2,4,7,3,5,6,8} 和中序遍历序列 {4,7,2,1,5,3,8,6}。<br>那么如题根为1，则根据中序遍历序列则可以得到左子树 {4,7,2} 和右子树 {5,3,8,6}。<br>又根据前序遍历则可以得到左子树的根为 2，右子树的根为 3。<br>重复以上两步，直到左右子树皆为空时即可重建二叉树如图。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> TreeNode <span class="title">reConstructBinaryTree</span><span class="params">(<span class="keyword">int</span>[] pre, <span class="keyword">int</span>[] in)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (pre == <span class="keyword">null</span> || in == <span class="keyword">null</span> || pre.length != in.length) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> re(pre, <span class="number">0</span>, pre.length - <span class="number">1</span>, in, <span class="number">0</span>, in.length - <span class="number">1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> TreeNode <span class="title">re</span><span class="params">(<span class="keyword">int</span>[] pre,<span class="keyword">int</span> startPre,<span class="keyword">int</span> endPre,<span class="keyword">int</span>[] in,<span class="keyword">int</span> startIn,<span class="keyword">int</span> endIn)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (startPre &gt; endPre || startIn &gt; endIn) &#123;<span class="comment">//判定是否序列是否便利完。</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    TreeNode root = <span class="keyword">new</span> TreeNode(pre[startPre]);<span class="comment">//存入节点</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = startIn; i &lt;= endIn; i++)&#123;<span class="comment">//从中序遍历开始，寻找和根节点相同的元素。</span></span><br><span class="line">        <span class="keyword">if</span> (in[i] == pre[startPre]) &#123;<span class="comment">//找到了之后分为左右子树，递归进行查找。</span></span><br><span class="line">            root.left = re(pre, startPre + <span class="number">1</span>, startPre + i - startIn, in, startIn, i - <span class="number">1</span>);</span><br><span class="line">            root.right = re(pre, startPre + i - startIn + <span class="number">1</span>, endPre, in, i + <span class="number">1</span>, endIn);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">cutRope</span><span class="params">(<span class="keyword">int</span> target)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(target &lt; <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(target == <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(target == <span class="number">3</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] dp = <span class="keyword">new</span> <span class="keyword">int</span>[target + <span class="number">1</span>];</span><br><span class="line">        dp[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">        dp[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">        dp[<span class="number">2</span>] = <span class="number">2</span>;</span><br><span class="line">        dp[<span class="number">3</span>] = <span class="number">3</span>;</span><br><span class="line">        <span class="keyword">int</span> max = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">4</span>; i &lt;= target; i++)&#123;</span><br><span class="line">            max = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span> ; j &lt;= i / <span class="number">2</span>; j++)&#123;</span><br><span class="line">                tmp = dp[j] * dp[i - j];</span><br><span class="line">                <span class="keyword">if</span> (tmp &gt; max)&#123;</span><br><span class="line">                    max = tmp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            dp[i] = max;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[target];</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -351,8 +350,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/09/用两个栈实现队列/" rel="next" title="用两个栈实现队列">
-                <i class="fa fa-chevron-left"></i> 用两个栈实现队列
+              <a href="/2020/02/09/重建二叉树/" rel="next" title="重建二叉树">
+                <i class="fa fa-chevron-left"></i> 重建二叉树
               </a>
             
           </div>
@@ -360,10 +359,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/15/剪绳子/" rel="prev" title="剪绳子">
-                剪绳子 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
