@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="题目描述 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。  1234567891011121314151617Stack&amp;lt;Integer&amp;gt; stack1 = new Stack&amp;lt;Integer&amp;gt;();Stack&amp;lt;Integer&amp;gt; stack2 = new Stack&amp;lt;Integer&amp;gt;();    public v">
+<meta name="description" content="题目描述 给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组 {2, 3, 4, 2, 6, 2, 5, 1} 及滑动窗口的大小 3，那么一共存在 6 个滑动窗口，他们的最大值分别为 {4, 4, 6, 6, 6, 5}； 针对数组{2 , 3, 4, 2, 6, 2, 5, 1} 的滑动窗口有以下 6 个： {[2 ,3 , 4], 2, 6, 2, 5, 1}，">
 <meta name="keywords" content="剑指 offer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用两个栈实现队列">
-<meta property="og:url" content="http://yoursite.com/2020/02/09/用两个栈实现队列/index.html">
+<meta property="og:title" content="滑动窗口的最大值">
+<meta property="og:url" content="http://yoursite.com/2020/02/22/滑动窗口的最大值/index.html">
 <meta property="og:site_name" content="newcaoguo">
-<meta property="og:description" content="题目描述 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。  1234567891011121314151617Stack&amp;lt;Integer&amp;gt; stack1 = new Stack&amp;lt;Integer&amp;gt;();Stack&amp;lt;Integer&amp;gt; stack2 = new Stack&amp;lt;Integer&amp;gt;();    public v">
+<meta property="og:description" content="题目描述 给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组 {2, 3, 4, 2, 6, 2, 5, 1} 及滑动窗口的大小 3，那么一共存在 6 个滑动窗口，他们的最大值分别为 {4, 4, 6, 6, 6, 5}； 针对数组{2 , 3, 4, 2, 6, 2, 5, 1} 的滑动窗口有以下 6 个： {[2 ,3 , 4], 2, 6, 2, 5, 1}，">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-09T15:17:20.095Z">
+<meta property="og:updated_time" content="2020-02-22T12:40:22.983Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用两个栈实现队列">
-<meta name="twitter:description" content="题目描述 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。  1234567891011121314151617Stack&amp;lt;Integer&amp;gt; stack1 = new Stack&amp;lt;Integer&amp;gt;();Stack&amp;lt;Integer&amp;gt; stack2 = new Stack&amp;lt;Integer&amp;gt;();    public v">
+<meta name="twitter:title" content="滑动窗口的最大值">
+<meta name="twitter:description" content="题目描述 给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组 {2, 3, 4, 2, 6, 2, 5, 1} 及滑动窗口的大小 3，那么一共存在 6 个滑动窗口，他们的最大值分别为 {4, 4, 6, 6, 6, 5}； 针对数组{2 , 3, 4, 2, 6, 2, 5, 1} 的滑动窗口有以下 6 个： {[2 ,3 , 4], 2, 6, 2, 5, 1}，">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/02/09/用两个栈实现队列/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/22/滑动窗口的最大值/">
 
 
 
 
 
-  <title>用两个栈实现队列 | newcaoguo</title>
+  <title>滑动窗口的最大值 | newcaoguo</title>
   
 
 
@@ -250,7 +250,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/09/用两个栈实现队列/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/滑动窗口的最大值/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="newcaoguo">
@@ -267,7 +267,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">用两个栈实现队列</h1>
+          <h1 class="post-title" itemprop="name headline">滑动窗口的最大值</h1>
         
 
         <div class="post-meta">
@@ -279,8 +279,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-09T23:15:51+08:00">
-                2020-02-09
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-22T20:20:54+08:00">
+                2020-02-22
               </time>
             
 
@@ -317,10 +317,10 @@
       
 
       
-        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6?tpId=13&tqId=11158&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking" target="_blank" rel="noopener">题目描述</a></h2><blockquote>
-<p>用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。</p>
+        <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=13&tqId=11217&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking" target="_blank" rel="noopener">题目描述</a></h2><blockquote>
+<p>给定一个数组和滑动窗口的大小，找出所有滑动窗口里数值的最大值。例如，如果输入数组 {2, 3, 4, 2, 6, 2, 5, 1} 及滑动窗口的大小 3，那么一共存在 6 个滑动窗口，他们的最大值分别为 {4, 4, 6, 6, 6, 5}； 针对数组{2 , 3, 4, 2, 6, 2, 5, 1} 的滑动窗口有以下 6 个： {[2 ,3 , 4], 2, 6, 2, 5, 1}， {2, [3, 4, 2], 6, 2, 5, 1}， {2, 3, [4, 2, 6], 2, 5, 1}， {2, 3, 4, [2, 6, 2], 5, 1}， {2,3, 4, 2, [6, 2, 5], 1}， {2, 3, 4, 2, 6, [2, 5, 1]}。</p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Stack&lt;Integer&gt; stack1 = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">Stack&lt;Integer&gt; stack2 = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> node)</span> </span>&#123;</span><br><span class="line">    stack1.push(node);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (!stack1.empty()) &#123;</span><br><span class="line">        stack2.push(stack1.pop());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> value = stack2.pop();</span><br><span class="line">    <span class="keyword">while</span> (!stack2.empty()) &#123;</span><br><span class="line">        stack1.push(stack2.pop());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">maxInWindows</span><span class="params">(<span class="keyword">int</span>[] num, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    ArrayList&lt;Integer&gt; mList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">if</span> (num == <span class="keyword">null</span> || num.length == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> mList;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num.length; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> left = i;</span><br><span class="line">        <span class="keyword">int</span> right = i + size - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> max = Integer.MIN_VALUE;</span><br><span class="line">        <span class="keyword">if</span> (right &lt; num.length) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = left; j &lt;= right; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (num[j] &gt;= max) &#123;</span><br><span class="line">                    max = num[j];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (max != Integer.MIN_VALUE) &#123;</span><br><span class="line">            mList.add(max);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> mList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -350,8 +350,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/08/反转链表/" rel="next" title="反转链表">
-                <i class="fa fa-chevron-left"></i> 反转链表
+              <a href="/2020/02/18/矩阵中的路径/" rel="next" title="矩阵中的路径">
+                <i class="fa fa-chevron-left"></i> 矩阵中的路径
               </a>
             
           </div>
@@ -359,10 +359,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/09/重建二叉树/" rel="prev" title="重建二叉树">
-                重建二叉树 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

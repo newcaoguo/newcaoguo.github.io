@@ -247,6 +247,128 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/09/用两个栈实现队列/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="newcaoguo">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="newcaoguo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/02/09/用两个栈实现队列/" itemprop="url">用两个栈实现队列</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-09T23:15:51+08:00">
+                2020-02-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6?tpId=13&tqId=11158&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking" target="_blank" rel="noopener">题目描述</a></h2><blockquote>
+<p>用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Stack&lt;Integer&gt; stack1 = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">Stack&lt;Integer&gt; stack2 = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> node)</span> </span>&#123;</span><br><span class="line">    stack1.push(node);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span> (!stack1.empty()) &#123;</span><br><span class="line">        stack2.push(stack1.pop());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> value = stack2.pop();</span><br><span class="line">    <span class="keyword">while</span> (!stack2.empty()) &#123;</span><br><span class="line">        stack1.push(stack2.pop());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/反转链表/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -751,225 +873,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/05/BAT-内部职位层级薪酬和晋升标准/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="newcaoguo">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="newcaoguo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/02/05/BAT-内部职位层级薪酬和晋升标准/" itemprop="url">BAT 内部职位层级薪酬和晋升标准</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-02-05T15:30:38+08:00">
-                2020-02-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="腾讯"><a href="#腾讯" class="headerlink" title="腾讯"></a>腾讯</h2><h3 id="1-职级"><a href="#1-职级" class="headerlink" title="1. 职级"></a>1. 职级</h3><p>腾讯职级体系分 6 级，最低 1 级，最高 6 级。同时按照岗位又划分为 四大通道，内部也叫“族”，比如：</p>
-<ul>
-<li>产品 / 项目通道，简称 P 族</li>
-<li>技术通道，简称 T 族</li>
-<li>市场通道，简称 M 族</li>
-<li>职能通道，简称 S 族</li>
-</ul>
-<p>以 T 族为例，分别为：</p>
-<ul>
-<li>T1：助理工程师 （一般为校招新人）</li>
-<li>T2：工程师</li>
-<li>T3：高级工程师 3-1 相当于 阿里的 p6 到 p7（能力强可能到 p7）</li>
-<li>T4：专家工程师</li>
-<li>T5：科学家</li>
-<li>T6：首席科学家</li>
-</ul>
-<p>每一级之间又分为 3 个子级，3-1 是任命组长 / 副组长的必要条件，其他线也是这样。T4 基本为总监级，也不排除有T 3-3 的总监，因为 T4 非常难晋级。</p>
-<p>不过在不久前宣布调整职级，取消了原有的 6 级 18 等（1.1 - 6.3 级）的职级体系设计，将专业职级体系优化为 14 级 (4 - 17 级).</p>
-<p><img src="/images/tencent_rank.png" alt></p>
-<h3 id="2-晋升"><a href="#2-晋升" class="headerlink" title="2. 晋升"></a>2. 晋升</h3><p>腾讯的晋级还是很困难的。尤其是T2 升T3，T3升T4。非常多的人卡在2-3,3-3没办法晋级。有的小伙伴做了3、4年的2-3 也升不上去啊.</p>
-<h3 id="3-薪水"><a href="#3-薪水" class="headerlink" title="3. 薪水"></a>3. 薪水</h3><p><img src="/images/tencent_salary.png" alt></p>
-<p>腾讯薪资架构：12 1 1=14薪</p>
-<p>年终奖：看部门盈利情况，一般是3个月</p>
-<p>级别越高 base 薪酬也越高，一年根据你的 performance 大概能发 15.3 个月 至 18 个月的工资，T3.1 的 base 2w ，T3 以上级别的员工都会有股票期权，腾讯 09 以前的员工赚钱主要靠股票，从 08 到现在股票 up 了 500% ，T5 的 base 薪酬在 600w ~ 800w / 年.</p>
-<h2 id="阿里巴巴"><a href="#阿里巴巴" class="headerlink" title="阿里巴巴"></a>阿里巴巴</h2><h3 id="1-职级-1"><a href="#1-职级-1" class="headerlink" title="1. 职级"></a>1. 职级</h3><p>阿里的职称大部分都归纳在 P 序列, 你的 title 工种。比如 P7 产品经理 = 产品专家.</p>
-<ul>
-<li>一般到 P3 为 助理</li>
-<li>P4 = 专员</li>
-<li>P5 = 资深专员</li>
-<li>P6 = 高级专员（也可能是高级资深）</li>
-<li>P7 = 专家</li>
-<li>P8 = 资深专家（架构师）</li>
-<li>P9 = 高级专家（资深架构师）</li>
-<li>P10 = 研究员</li>
-<li>P11 = 高级研究员</li>
-<li>P12 = 科学家</li>
-<li>P13 = 首席科学</li>
-<li>P14 = 马云</li>
-</ul>
-<p>同时对应 P 级还有一套管理层的机制在：</p>
-<ul>
-<li>M1 = P6 主管</li>
-<li>M2 = P7 经理</li>
-<li>M3 = P8 资深经理</li>
-<li>M4 = P9 总监</li>
-<li>M5 = P10 资深总监</li>
-<li>M6 = P11 副总裁</li>
-<li>M7 = P12 资深副总裁</li>
-<li>M8 = P13 子公司CEO 或集团其他O</li>
-<li>M9 = P14 陆兆禧（前马云）</li>
-</ul>
-<p>在阿里早些时候 P 级普遍偏低，专员可能是 P2 这样，后来有了一次 P 级通货膨胀，出现了更多的 P 级。在阿里只有P6（M1）后才算是公司的中层。不同的子公司给出 P 级的标准不一样。</p>
-<p>比如：B2B 的普遍 P 级较高，但是薪资水平低于天猫子公司的同级人员。同时到达该 P 级员工才有享受公司 RSU 的机会。（低于 P6 的除非项目出色有 RSU 奖励，否则 1 股都拿不到）</p>
-<h3 id="2-晋升-1"><a href="#2-晋升-1" class="headerlink" title="2.晋升"></a>2.晋升</h3><p>晋升很简单：</p>
-<ol>
-<li><p>晋升资格：上年度KPI达3.75。</p>
-</li>
-<li><p>主管提名。一般KPI不达3.75主管不会提名。</p>
-</li>
-<li><p>晋升委员会面试。（晋升委员会组成一般是合作方业务部门大佬、HRG、该业务线大佬等。）</p>
-</li>
-<li><p>晋升委员会投票。</p>
-</li>
-</ol>
-<p>P5 升 P6 相对容易，再往上会越来越难，一般到P7都是团队技术leader了，P6到P7非常难，从员工到管理的那一步跨出去不容易，当然有同学说 P 一般都是专家，M 才是管理，actually，专家线/管理线有时并不是分的那么清楚的.</p>
-<h3 id="3-薪水-1"><a href="#3-薪水-1" class="headerlink" title="3. 薪水"></a>3. 薪水</h3><ul>
-<li>阿里薪资结构：一般是12 1 3 = 16薪</li>
-<li>年底的奖金为 0-6 个月薪资，90% 人可拿到 3 个月</li>
-<li>股票是工作满 2 年才能拿，第一次拿 50%，4 年能全部拿完</li>
-</ul>
-<p><img src="/images/alibaba_salary.png" alt></p>
-<h2 id="百度"><a href="#百度" class="headerlink" title="百度"></a>百度</h2><h3 id="1-层级"><a href="#1-层级" class="headerlink" title="1. 层级"></a>1. 层级</h3><p>百度的级别架构分成四条线。</p>
-<ul>
-<li><p>技术序列 T：T3 - T11 （一般对应阿里高一级序列，如：百度T3 = 阿里P4，T5 / T6属于部门骨干，非常抢手，人人猎中相当一部分 offer 人选都来自这个序列）</p>
-</li>
-<li><p>产品运营序列 P：p3 - P11 （产品和运营岗，对应阿里高1-1.5级序列 百度p3=阿里P4-P5之间)</p>
-</li>
-<li><p>后勤支持部门 S：S3 - S11 (主要是公共、行政、渠道等等，晋升比较困难)</p>
-</li>
-<li><p>管理序列 M：M1 - M5 (每一级又分为 2 个子级 M1A、M1B , 最低的是 M1A，至少是部门二把手了，李明远是 M3.2，以前的汤和松都是这个级别，李彦宏是唯一的 M5，其实从 M3 开始就有机会加入 E——star，类似于阿里的合伙人会议，属于最高战略决策层.</p>
-</li>
-</ul>
-<h3 id="2-薪资"><a href="#2-薪资" class="headerlink" title="2. 薪资"></a>2. 薪资</h3><p>月薪 14.6（12 0.6 2）, 其他岗位：月薪 14</p>
-<p>T5 以上为关键岗位，另外有股票、期权。T5、T6占比最大的级别，T8、T9占比最小，级别越高，每档之间的宽幅越大。</p>
-<h3 id="3-晋升"><a href="#3-晋升" class="headerlink" title="3. 晋升"></a>3. 晋升</h3><p>基本上应届毕业生应该是 T3，但是内部晋升非常激烈。公司那么大，部门和部门之间有业务竞争，肯定也有人才竞争。</p>
-<p>通常应届毕业生入职1年多能升到 T4，但如果你的部门业务足够核心，或许 1 年就可以了。3 年升 T5。从目前百度的情况来看，核心工程师集中在 T5 / 6，但是从 5/6 到 7是非常艰难的过程。</p>
-<p>百度是很唯 KPI 至上的，其次部门很核心，再次老大话语权比较高，相对晋升容易些。</p>
-<p>一般情况分2种：</p>
-<ol>
-<li><p>自己提名，当你自己觉得已经具备下一 level 的素质，可以自己提名，提名后进入考察期，主管设定考察期目标，考察通过顺利晋升，考察不通过维持原层级不变；</p>
-</li>
-<li><p>主管提名，如果是主管提名，一般都是直接通过的，但是如果你现层级已经比较高了，那就不是直接提名这么简单了。</p>
-</li>
-</ol>
-<p>P.S. 如果你能升到 T7，基本上是 TL 的级别，写代码 / 直接做业务的时间就很少了.</p>
-<p>虽然 BAT 们的技术岗位定着高大上的职级、拿着令人艳羡的薪资，但其实很多人在很多年里都会困在某一职级上停步不前，工作经验的积累并不能带来工作上的平滑晋升。</p>
-<h2 id="BAT-内部技术晋升有多难？"><a href="#BAT-内部技术晋升有多难？" class="headerlink" title="BAT 内部技术晋升有多难？"></a>BAT 内部技术晋升有多难？</h2><p>以阿里巴巴技术岗为例，很多人入职时可以拿到 P5、P6 的定级，但从 P6 到 P7 升级是一个坎，很多人会卡在 P6 级别上一两年甚至更久。而从 P7 到 P8 就更不容易了。再往上，从 P8 到 P9 的升级会更难，要的不仅是业界影响力，还需要有足够的运气。而从 P9 到 P10，难度更上一层楼，猎头直言：“这个级别需要做出像钉钉、咸鱼式的产品才有机会”。当成功晋升 P10 时，已经是管理线的 M5 级别，有机会进入阿里组织部，这个级别的技术人跳槽就很少了，一般都是出去创业。</p>
-<p>腾讯的技术晋升也不容易。在腾讯旧的职级体系下，T3-3 升 T4-1 是一个大坎，停留在 T3-3 超过 5 年的不在少数，停留 7 年的也有。一旦进入 T4 级别，就是腾讯的专家工程师了，腾讯研发人数将近 2 万人，T4 级别的人数大概也不超过 500 人，这还是在近两年 T3 到 T4 级别人数增多的情况下。</p>
-<p>工程师的晋升方式，不同公司之间的规则不尽相同。以阿里为例，每年 4 月份会组织一次工程师答辩。评委会由阿里技术线的高级程序员组成，对绩效考核达到 3.75 的员工进行考核答辩，通过者方能成功晋级。当然，如果你能做出惊天地泣鬼神的产品，跳级晋升也不是什么难事。</p>
-<p>基本功扎实、技术能力过硬，这是技术线较低级别晋升的共性。但当发展到中、高级技术路线时，技术能力就不再是唯一重要的考核标准，具不具备良好的产品感觉、做没做过完整的技术架构、懂不懂业务痛点、商业思维，都是晋升必不可少的要素。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1022,7 +925,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
