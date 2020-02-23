@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="题目描述 给定一棵二叉搜索树，请找出其中的第 k 小的结点。例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为 4。  1234567891011121314151617181920212223242526List&amp;lt;TreeNode&amp;gt; mList = new ArrayList&amp;lt;&amp;gt;();    TreeNode KthNode(TreeNode pR">
+<meta name="description" content="题目描述 给定一棵二叉搜索树，请找出其中的第 k 小的结点。例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为 4。  1234567891011121314151617181920212223242526List&amp;lt;TreeNode&amp;gt; mList = new ArrayList&amp;lt;&amp;gt;();TreeNode KthNode(TreeNode pRoot,">
 <meta name="keywords" content="剑指 offer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="二叉搜索树的第k个结点">
 <meta property="og:url" content="http://yoursite.com/2020/02/23/二叉搜索树的第k个结点/index.html">
 <meta property="og:site_name" content="newcaoguo">
-<meta property="og:description" content="题目描述 给定一棵二叉搜索树，请找出其中的第 k 小的结点。例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为 4。  1234567891011121314151617181920212223242526List&amp;lt;TreeNode&amp;gt; mList = new ArrayList&amp;lt;&amp;gt;();    TreeNode KthNode(TreeNode pR">
+<meta property="og:description" content="题目描述 给定一棵二叉搜索树，请找出其中的第 k 小的结点。例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为 4。  1234567891011121314151617181920212223242526List&amp;lt;TreeNode&amp;gt; mList = new ArrayList&amp;lt;&amp;gt;();TreeNode KthNode(TreeNode pRoot,">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-23T14:29:43.373Z">
+<meta property="og:updated_time" content="2020-02-23T14:29:52.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="二叉搜索树的第k个结点">
-<meta name="twitter:description" content="题目描述 给定一棵二叉搜索树，请找出其中的第 k 小的结点。例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为 4。  1234567891011121314151617181920212223242526List&amp;lt;TreeNode&amp;gt; mList = new ArrayList&amp;lt;&amp;gt;();    TreeNode KthNode(TreeNode pR">
+<meta name="twitter:description" content="题目描述 给定一棵二叉搜索树，请找出其中的第 k 小的结点。例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为 4。  1234567891011121314151617181920212223242526List&amp;lt;TreeNode&amp;gt; mList = new ArrayList&amp;lt;&amp;gt;();TreeNode KthNode(TreeNode pRoot,">
 
 
 
@@ -320,7 +320,7 @@
         <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><a href="https://www.nowcoder.com/practice/ef068f602dde4d28aab2b210e859150a?tpId=13&tqId=11215&tPage=4&rp=4&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking" target="_blank" rel="noopener">题目描述</a></h2><blockquote>
 <p>给定一棵二叉搜索树，请找出其中的第 k 小的结点。例如，（5，3，7，2，4，6，8）中，按结点数值大小顺序第三小结点的值为 4。</p>
 </blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">List&lt;TreeNode&gt; mList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function">TreeNode <span class="title">KthNode</span><span class="params">(TreeNode pRoot, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 先序遍历找到二叉搜索树增序数列</span></span><br><span class="line">        preNode(pRoot);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= mList.size(); i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i == k) &#123;</span><br><span class="line">                <span class="keyword">return</span> mList.get(i - <span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">preNode</span><span class="params">(TreeNode pRoot)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (pRoot == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (pRoot.left != <span class="keyword">null</span>) &#123;</span><br><span class="line">            preNode(pRoot.left);</span><br><span class="line">        &#125;</span><br><span class="line">        mList.add(pRoot);</span><br><span class="line">        <span class="keyword">if</span> (pRoot.right != <span class="keyword">null</span>) &#123;</span><br><span class="line">            preNode(pRoot.right);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">List&lt;TreeNode&gt; mList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line"><span class="function">TreeNode <span class="title">KthNode</span><span class="params">(TreeNode pRoot, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 先序遍历找到二叉搜索树增序数列</span></span><br><span class="line">    preNode(pRoot);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= mList.size(); i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i == k) &#123;</span><br><span class="line">            <span class="keyword">return</span> mList.get(i - <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">preNode</span><span class="params">(TreeNode pRoot)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (pRoot == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (pRoot.left != <span class="keyword">null</span>) &#123;</span><br><span class="line">        preNode(pRoot.left);</span><br><span class="line">    &#125;</span><br><span class="line">    mList.add(pRoot);</span><br><span class="line">    <span class="keyword">if</span> (pRoot.right != <span class="keyword">null</span>) &#123;</span><br><span class="line">        preNode(pRoot.right);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -359,6 +359,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/02/23/序列化二叉树/" rel="prev" title="序列化二叉树">
+                序列化二叉树 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -437,7 +441,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
